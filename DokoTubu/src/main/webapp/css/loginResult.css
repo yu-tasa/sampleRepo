@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,300,600);
+
+*{box-sizing:border-box;}
+
+body {
+  font-family: 'open sans', helvetica, arial, sans;
+}
+
+.disp {
+  width: 40%;
+  min-width: 320px;
+  max-width: 475px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+transform: translate(-50%,-50%);
+  
+  box-shadow: 0px 2px 5px rgba(0,0,0,.25);
+  
+  @media(max-width: 40em){
+    width: 95%;
+    position: relative;
+    margin: 2.5% auto 0 auto;
+    left: 0%;
+  }
+  
+  .textContents {
+    display: block;
+    width: 100%;
+    padding: 2em;
+  }
+  
+  h2 {
+    width: 100%;
+    color: white;
+    font-family: 'open sans condensed';
+    font-size: 1.35em;
+    display: block;
+    background:#1fb5bf;
+    width: 100%;
+/*    text-transform: uppercase;*/
+    padding: .75em 1em .75em 1.5em;
+/*    box-shadow: 5px 2px 0px rgba(0,0,0,.25);*/
+/*    border: 1px solid gainsboro;*/
+/*    text-shadow: 0px 1px 1px darken(#2a2a2a, 5%);*/
+    margin: 0;
+    font-weight: 200;
+  }
+    
+  .pageMove {
+    color:#1fb5bf;
+    line-height: .5em;
+    position: relative;
+/*    top: 2.5em;*/
+    text-decoration: none;
+    font-size: .75em;
+    margin:0;
+    padding: 0;
+    float: right;
+    }
+  .pageMove:hover{
+	  color:darkblue;
+	}
+  .ankerDiv{
+	  text-align: right;
+  }
+ 
+  
+}
